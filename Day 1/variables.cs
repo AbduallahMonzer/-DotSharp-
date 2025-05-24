@@ -1,7 +1,18 @@
+using System;
+using System.Numerics;
+
+class Person
+{
+	// Field
+	public string name;
+	// Method
+	public void Greet()
+	{
+		Console.WriteLine($"Hello This The Start of The C# , Hope {name} enjoy");
+	}
+}
 // Variables
 
-using System;
-using System.Net.Mail;
 class Program
 {
 	static void Main()
@@ -19,7 +30,7 @@ class Program
 		Console.WriteLine($"c = {c}, d={d}");
 
 		int name1 = a;
-		// char name2 = abd;      wrong
+		// char name2 = abd;      wrong it should be ="a" only
 
 		string name3 = "abd"; // right type
 		Console.WriteLine(name3);
@@ -51,6 +62,11 @@ class Program
 		UserInput.InsertData();
 		Operator.AllOperators();
 		Strings.StringsInfo();
+		Person p = new Person();
+		p.name = "monzer";
+		p.Greet();
+		Conditions.Run();
+		Loops.WhileFor();
 	}
 }
 
@@ -120,5 +136,72 @@ class Strings
 		int age = 25;
 		Console.WriteLine($"My name is {name} and I am {age} years old.");
 		Console.WriteLine(name[2]);
+	}
+}
+
+class Conditions
+{
+	public static void Run()
+	{
+		Iff();
+	}
+	private static void Iff()
+	{
+		int x = 23;
+		int y = 24;
+		if (x > y)
+		{
+			Console.WriteLine("X is bigger than y");
+		}
+		else if (x == y)
+		{
+			Console.WriteLine("x equal y");
+		}
+		else
+		{
+			Console.WriteLine("x smaller than y");
+		}
+		string z = (x > y) ? "x is Bigger than  than y" : "x is smaller than y";
+		Console.WriteLine(z);
+		/// ---------------------------------------------------------------------------
+		int day = 6;
+		switch (day)
+		{
+			case 1:
+				Console.WriteLine("Saturday");
+				break;
+			case 2:
+				Console.WriteLine("Sunday");
+				break;
+			case 3:
+				Console.WriteLine("Monday");
+				break;
+			case 4:
+				Console.WriteLine("tuesday");
+				break;
+			default:
+				Console.WriteLine("Looking Forward for the weekend");
+				break;
+		}
+	}
+}
+
+class Loops
+{
+	public static void WhileFor()
+	{
+		int i = 13;
+		while (i < 16)
+		{
+			i++;
+			Console.WriteLine(i);
+		}
+		// watch the difference when you increment
+		int x = 13;
+		while (x < 16)
+		{
+			Console.WriteLine(x);
+			x++;
+		}
 	}
 }
