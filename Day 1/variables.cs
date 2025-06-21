@@ -204,4 +204,71 @@ class Loops
 			x++;
 		}
 	}
+	public static void DoWhile()
+	{
+		int x = 10;
+		do
+		{
+			x++;
+		} while (x < 20);
+	}
+	public static void ForLoop()
+	{
+		for (int z = 0; z < 4; z++)
+		{
+			Console.WriteLine(z);
+		}
+		// Nested Loop
+		for (int y = 0; y < 8; y--)
+		{
+			Console.WriteLine(" Outer: " + y);
+			for (int u = 0; u < 20; u++)
+			{
+				Console.WriteLine(" Inner: " + u);
+			}
+		}
+		//Foreach
+		string[] cars = { "Volvo", "BMW", "Ford", "Mazda" };
+		foreach (string i in cars)
+		{
+			Console.WriteLine(i);
+		}
+	}
+}
+
+class Array
+{
+	public static void Arrays()
+	{
+		//string[] cars = new string[4] { "BMW", "Golf", "Seat", "Mercedes" };
+		string[] cars = { "BMW", "Golf", "Seat", "Mercedes" };
+		//sorting and looping
+		Array.Sort(cars);
+		foreach (string i in cars)
+		{
+			Console.WriteLine(i);
+		}
+	}
+	//Loop through array
+	public static void loopArray()
+	{
+		string[] names = { "Omar", "Hannah", "Ahmed" };
+		for (int i = 0; i < names.Length; i++)
+		{
+			Console.WriteLine(names[i]);
+		}
+	}
+	// Multidieminssionalarray 
+	public static void multiDimArray()
+	{
+		int[,] myNumber = { { 1, 2, 3 }, { 4, 5, 6 } };
+		Console.WriteLine(myNumber[0, 0]);
+		for (int i = 0; i < myNumber.GetLength(0); i++)
+		{
+			for (int j = 0; j < myNumber.GetLength(1); i++) ;
+			{
+				Console.WriteLine(myNumber[i, j]);
+			}
+		}
+	}
 }
