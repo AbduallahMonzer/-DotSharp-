@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/monzzzz22/Documents/DotSharp-/DotSharp.csproj": {}
+    "/home/monzzzz22/Documents/DotSharp-/Day 2/Day 2.csproj": {}
   },
   "projects": {
-    "/home/monzzzz22/Documents/DotSharp-/DotSharp.csproj": {
+    "/home/monzzzz22/Documents/DotSharp-/Day 2/Day 2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/monzzzz22/Documents/DotSharp-/DotSharp.csproj",
-        "projectName": "DotSharp",
-        "projectPath": "/home/monzzzz22/Documents/DotSharp-/DotSharp.csproj",
+        "projectUniqueName": "/home/monzzzz22/Documents/DotSharp-/Day 2/Day 2.csproj",
+        "projectName": "Day 2",
+        "projectPath": "/home/monzzzz22/Documents/DotSharp-/Day 2/Day 2.csproj",
         "packagesPath": "/home/monzzzz22/.nuget/packages/",
-        "outputPath": "/home/monzzzz22/Documents/DotSharp-/obj/",
+        "outputPath": "/home/monzzzz22/Documents/DotSharp-/Day 2/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/monzzzz22/.nuget/NuGet/NuGet.Config"

@@ -1,0 +1,15 @@
+/home/monzzzz22/Documents/DotSharp-/Day 2/bin/Debug/net9.0/Day 2
+/home/monzzzz22/Documents/DotSharp-/Day 2/bin/Debug/net9.0/Day 2.deps.json
+/home/monzzzz22/Documents/DotSharp-/Day 2/bin/Debug/net9.0/Day 2.runtimeconfig.json
+/home/monzzzz22/Documents/DotSharp-/Day 2/bin/Debug/net9.0/Day 2.dll
+/home/monzzzz22/Documents/DotSharp-/Day 2/bin/Debug/net9.0/Day 2.pdb
+/home/monzzzz22/Documents/DotSharp-/Day 2/obj/Debug/net9.0/Day 2.GeneratedMSBuildEditorConfig.editorconfig
+/home/monzzzz22/Documents/DotSharp-/Day 2/obj/Debug/net9.0/Day 2.AssemblyInfoInputs.cache
+/home/monzzzz22/Documents/DotSharp-/Day 2/obj/Debug/net9.0/Day 2.AssemblyInfo.cs
+/home/monzzzz22/Documents/DotSharp-/Day 2/obj/Debug/net9.0/Day 2.csproj.CoreCompileInputs.cache
+/home/monzzzz22/Documents/DotSharp-/Day 2/obj/Debug/net9.0/Day 2.sourcelink.json
+/home/monzzzz22/Documents/DotSharp-/Day 2/obj/Debug/net9.0/Day 2.dll
+/home/monzzzz22/Documents/DotSharp-/Day 2/obj/Debug/net9.0/refint/Day 2.dll
+/home/monzzzz22/Documents/DotSharp-/Day 2/obj/Debug/net9.0/Day 2.pdb
+/home/monzzzz22/Documents/DotSharp-/Day 2/obj/Debug/net9.0/Day 2.genruntimeconfig.cache
+/home/monzzzz22/Documents/DotSharp-/Day 2/obj/Debug/net9.0/ref/Day 2.dll

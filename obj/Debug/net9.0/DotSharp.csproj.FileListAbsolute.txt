@@ -13,3 +13,8 @@
 /home/monzzzz/Documents/DotSharp/obj/Debug/net9.0/DotSharp.pdb
 /home/monzzzz/Documents/DotSharp/obj/Debug/net9.0/DotSharp.genruntimeconfig.cache
 /home/monzzzz/Documents/DotSharp/obj/Debug/net9.0/ref/DotSharp.dll
+/home/monzzzz22/Documents/DotSharp-/obj/Debug/net9.0/DotSharp.GeneratedMSBuildEditorConfig.editorconfig
+/home/monzzzz22/Documents/DotSharp-/obj/Debug/net9.0/DotSharp.AssemblyInfoInputs.cache
+/home/monzzzz22/Documents/DotSharp-/obj/Debug/net9.0/DotSharp.AssemblyInfo.cs
+/home/monzzzz22/Documents/DotSharp-/obj/Debug/net9.0/DotSharp.csproj.CoreCompileInputs.cache
+/home/monzzzz22/Documents/DotSharp-/obj/Debug/net9.0/DotSharp.sourcelink.json

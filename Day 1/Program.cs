@@ -4,7 +4,8 @@ using System.Numerics;
 class Person
 {
 	// Field
-	public string name;
+	public string name="";
+	// or public string ? name;
 	// Method
 	public void Greet()
 	{
@@ -236,7 +237,7 @@ class Loops
 	}
 }
 
-class Array
+class MyArray
 {
 	public static void Arrays()
 	{
@@ -250,7 +251,7 @@ class Array
 		}
 	}
 	//Loop through array
-	public static void loopArray()
+	public static void LoopArray()
 	{
 		string[] names = { "Omar", "Hannah", "Ahmed" };
 		for (int i = 0; i < names.Length; i++)
@@ -259,13 +260,13 @@ class Array
 		}
 	}
 	// Multidieminssionalarray 
-	public static void multiDimArray()
+	public static void MultiDimArray()
 	{
 		int[,] myNumber = { { 1, 2, 3 }, { 4, 5, 6 } };
 		Console.WriteLine(myNumber[0, 0]);
 		for (int i = 0; i < myNumber.GetLength(0); i++)
 		{
-			for (int j = 0; j < myNumber.GetLength(1); i++) ;
+			for (int j = 0; j < myNumber.GetLength(1); j++) 
 			{
 				Console.WriteLine(myNumber[i, j]);
 			}
