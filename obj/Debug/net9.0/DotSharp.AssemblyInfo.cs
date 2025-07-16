@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DotSharp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1daf3dcee8849f0951888991cbf63cbdd3004e12")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b1536f668532ea1010e005d058515ff0153c1072")]
 [assembly: System.Reflection.AssemblyProductAttribute("DotSharp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DotSharp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
