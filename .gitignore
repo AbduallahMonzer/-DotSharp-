@@ -1,5 +1,7 @@
-# Ignore all AssemblyInfo.cs files
-*AssemblyInfo.cs
-
+# Build output
 bin/
 obj/
+
+# Any lingering generated assembly files (defense in depth)
+**/*AssemblyInfo*.cs
+**/*AssemblyInfoInputs.cache
