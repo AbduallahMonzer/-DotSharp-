@@ -14,7 +14,7 @@ class MethodsDemo
 		Person personOne = new Person();
 		personOne.FirstName = "Abduallah";
 		personOne.LastName = "Monzer";
-        personOne.BirthDate = DateOnly.ParseExact("22-9-2000", "d-M-yyyy", CultureInfo.InvariantCulture);
+		personOne.BirthDate = DateOnly.ParseExact("22-9-2000", "d-M-yyyy", CultureInfo.InvariantCulture);
 		personOne.Country = "Egypt";
 
 		Person personTwo = new Person();
@@ -23,10 +23,11 @@ class MethodsDemo
 		personTwo.BirthDate = DateOnly.ParseExact("22-9-2000", "d-m-yyyy", CultureInfo.InvariantCulture);
 		personTwo.Country = "Egypt";
 
+
 		Console.WriteLine(personOne.FirstName);
 		Console.WriteLine(personTwo.FirstName);
 
-		
+
 		MyMethod();
 		MyParam(25, "monzzz");
 		MyParam(24);
@@ -97,10 +98,10 @@ class MethodsDemo
 
 	class Person
 	{
-		string ? firstName;
-		string ? lastName;
+		string? firstName;
+		string? lastName;
 		DateOnly birthdate;
-		string ? country;
+		string? country;
 
 		//properties
 		public string FirstName
@@ -114,8 +115,9 @@ class MethodsDemo
 			set { lastName = value; }
 		}
 		public DateOnly BirthDate { get; set; }
-		public string ? Country { get; set; }
+		public string? Country { get; set; }
 	}
+
 
 
 }

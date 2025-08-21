@@ -1,11 +1,27 @@
 ﻿using System;
 
-class Car
+namespace ConstructorBasics;
+class Program
 {
-	string color = "red";
-	static void Main(string[] args)
+	static void Main()
 	{
-		Car MyObj = new Car();
-		Console.WriteLine(MyObj.color);
+		Console.WriteLine("Default Constructor");
+
+		Enemy zombie = new Enemy();
+		Console.WriteLine(zombie.Health);
+		Console.ReadLine();
+	}
+}
+
+class Enemy
+{
+	public string Id { get; set; }
+	public string EnemyName { get; set; }
+	public double Health { get; set; }
+
+	public Enemy()
+	{
+		Console.WriteLine("New Enemy is created");
+		Health = 100;
 	}
 }
