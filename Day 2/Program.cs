@@ -35,7 +35,7 @@ class MethodsDemo
 		Console.WriteLine(z);
 
 		int number = 5;
-		calculator calc = new calculator();
+		Calculator calc = new Calculator();
 
 		var demo = new MethodsDemo();
 		demo.ChangeValue(number);
@@ -74,18 +74,7 @@ class MethodsDemo
 	//----------------------------------------------
 	//----------Overloaded method-------------------
 
-	class calculator
-	{
-		public int Add(int a, int b)
-		{
-			return a + b;
-		}
-
-		public int Add(int a, int b, int c)
-		{
-			return a + b + c;
-		} //Here will happen the overload -> the program will search for which method has 3 params
-	}
+	
 
 	static void optionalParam(int no, string name, int goal, string country = "", string phone = "")
 	{
@@ -94,31 +83,6 @@ class MethodsDemo
 		Console.WriteLine(goal);
 		Console.WriteLine(country);
 		Console.WriteLine(phone);
-	}
-
-	class Person
-	{
-		string? firstName;
-		string? lastName;
-		DateOnly birthdate;
-		string? country;
-
-		//properties
-		public string FirstName
-		{
-			get { return firstName; }
-			set { firstName = value; }
-		}
-		public string LastName
-		{
-			get { return lastName; }
-			set { lastName = value; }
-		}
-		public DateOnly BirthDate { get; set; }
-		public string? Country { get; set; }
-	}
-
-
-
+	}	
 }
 
