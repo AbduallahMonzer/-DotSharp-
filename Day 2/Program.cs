@@ -8,58 +8,59 @@ using System.Globalization;
 
 class MethodsDemo
 {
-
 	static void Main(string[] args)
 	{
-		Person personOne = new Person();
-		personOne.FirstName = "Abduallah";
-		personOne.LastName = "Monzer";
-		personOne.BirthDate = DateOnly.ParseExact("22-9-2000", "d-M-yyyy", CultureInfo.InvariantCulture);
-		personOne.Country = "Egypt";
+		var PersonOne = new Person
+		{
+			FirstName = "Abduallah",
+			LastName = "Monzer",
+			BirthDate = DateOnly.ParseExact("22-9-2000", "d-M-yyyy", CultureInfo.InvariantCulture),
+			Country = "Egypt"
+		};
 
-		Person personTwo = new Person();
-		personTwo.FirstName = "Mohammed";
-		personTwo.LastName = "Monzer";
-		personTwo.BirthDate = DateOnly.ParseExact("22-9-2000", "d-m-yyyy", CultureInfo.InvariantCulture);
-		personTwo.Country = "Egypt";
+		var PersonTwo = new Person
+		{
+			FirstName = "Mohammed",
+			LastName = "Monzer",
+			BirthDate = DateOnly.ParseExact("11-11-1998", "d-M-yyyy", CultureInfo.InvariantCulture),
+			Country = "Egypt"
+		};
 
 
-		Console.WriteLine(personOne.FirstName);
-		Console.WriteLine(personTwo.FirstName);
+		Console.WriteLine(PersonOne.FirstName);
+		Console.WriteLine(PersonTwo.FirstName);
 
 
-		MyMethod();
-		MyParam(25, "monzzz");
-		MyParam(24);
-		int z = Returnable(5, 3);
-		Console.WriteLine(z);
+		ShowMessage();
+		PrintPersonAge(25, "monzzz");
+		PrintPersonAge(24); //uses default name
+
+		int result = AddNumbers(5, 3);
+		Console.WriteLine(result);
 
 		int number = 5;
-		Calculator calc = new Calculator();
 
 		var demo = new MethodsDemo();
 		demo.ChangeValue(number);
 		Console.WriteLine($"This is outside the method {number}");
+
+		var calc = new Calculator();
 		Console.WriteLine(calc.Add(2, 3));
 		Console.WriteLine(calc.Add(2, 3, 4));
-		optionalParam(7, "Abudallah", 800);
-		Console.ReadLine();
 
+		PrintOptionalInfo(7, "Abudallah", 800);
 	}
-	static void MyMethod()
+	static void ShowMessage()
 	{
 		Console.WriteLine("MyMethod was calling");
 	}
 
-	static void MyParam(int age, string fname = "Abduallah")
+	static void PrintPersonAge(int age, string fname = "Abduallah")
 	{
 		Console.WriteLine(fname + " is " + age);
 	}
 
-	static int Returnable(int x, int y)
-	{
-		return x + y;
-	}
+	static int AddNumbers(int x, int y) => x + y;
 
 
 	public void ChangeValue(int x)
@@ -76,7 +77,7 @@ class MethodsDemo
 
 	
 
-	static void optionalParam(int no, string name, int goal, string country = "", string phone = "")
+	static void PrintOptionalInfo(int no, string name, int goal, string country = "", string phone = "")
 	{
 		Console.WriteLine(no);
 		Console.WriteLine(name);
