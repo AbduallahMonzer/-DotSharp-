@@ -5,18 +5,13 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("Encapsulation demo:");
+        Console.WriteLine("============Construcotrs demo============");
 
-        Enemy zombie = new Enemy("");       
-        Console.WriteLine($"Id: {zombie.ID}");
-        Console.WriteLine($"Name: {zombie.Name}");
-        Console.WriteLine($"Health: {zombie.Health}");
-
-        zombie.TakeDamage(30);
-        Console.WriteLine($"After damage: {zombie.Health}");
-
-        zombie.Heal(500);
-        Console.WriteLine($"After big heal: {zombie.Health}");
+        Enemy e1 = new Enemy(); //Default
+        Enemy e2 = new Enemy("Zombie"); //Paramterized
+        Enemy e3 = new Enemy(e2); // copy
+        Enemy boss = Enemy.CreateBoss();
+        Console.WriteLine($"Boss Name: {boss.Name}, Health: {boss.Health}");
     }
 }
 
@@ -47,14 +42,54 @@ class Enemy
         }
     }
 
+    // Static constructors always execute once before the first object of that class is created.
+    static Enemy()
+    {
+        Console.WriteLine("static constructor called (run once).");
+    }
+
+    // Default constructor 
+    public Enemy()
+    {
+        _id = Guid.NewGuid().ToString();
+        _name = "Unkown";
+        Health = 100;
+        Console.WriteLine("Default constructor called");
+    }
+
+    // Paramterized constructor
     public Enemy(string name)
     {
         _id = Guid.NewGuid().ToString();
-        _name = string.IsNullOrWhiteSpace(name) ? "Unknown" : name.Trim(); // <-- fixes CS8618
+        _name = string.IsNullOrWhiteSpace(name) ? "Unkown" : name.Trim();
         Health = 100;
-        Console.WriteLine("New Enemy is created");
+        Console.WriteLine("Paramterized constructor called");
     }
 
+    // Copy constructor
+
+    public Enemy(Enemy other)
+    {
+        _id = Guid.NewGuid().ToString();
+        _name = other._name;
+        Health = other._health;
+        Console.WriteLine("copy constructor called");
+    }
+
+    // Private constructor 
+    private Enemy(string name, double health)
+    {
+        _id = Guid.NewGuid().ToString();
+        _name = name;
+        _health = health;
+        Console.WriteLine("private constructor called");
+    }
+    
+    // Factory method using the private constructor
+    public static Enemy CreateBoss()
+	{
+        return new Enemy("Boss", 300);
+	}
     public void TakeDamage(double amount)
     {
         if (amount <= 0) return;
