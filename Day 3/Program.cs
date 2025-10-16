@@ -1,4 +1,5 @@
 ﻿using System;
+using MethodsAndExtensionsDemo;
 
 namespace ConstructorBasics;
 class Program
@@ -12,6 +13,14 @@ class Program
         Enemy e3 = new Enemy(e2); // copy
         Enemy boss = Enemy.CreateBoss();
         Console.WriteLine($"Boss Name: {boss.Name}, Health: {boss.Health}");
+
+        Console.WriteLine("==========Methods and Extension methods demo");
+        //Using calculator from the methods demo
+
+        Calculator calc = new Calculator();
+        Console.WriteLine($"Add(5,3): {calc.Add(5, 3)}");
+        Console.WriteLine($"Multiply(5,3): {Calculator.Multiply(5, 3)}");
+        Console.WriteLine($"Divide(5,3): {calc.Divide(10,2)}");
     }
 }
 
@@ -84,12 +93,12 @@ class Enemy
         _health = health;
         Console.WriteLine("private constructor called");
     }
-    
+
     // Factory method using the private constructor
     public static Enemy CreateBoss()
-	{
+    {
         return new Enemy("Boss", 300);
-	}
+    }
     public void TakeDamage(double amount)
     {
         if (amount <= 0) return;
